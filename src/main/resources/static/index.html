@@ -32,6 +32,9 @@
                         <span>Discounted Price : ${data.discounted_price} </span><br>
                         <span>cost Price : ${data.cost_price} </span><br>
                         `);
+                    }, 
+                    error: function(e, status, error){
+                        $('#json').html(`<span> Not Order Details Found ${error} </span>`);
                     }
                 });
             }
